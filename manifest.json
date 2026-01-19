@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Web Sentinel by Dipesh",
+    "version": "1.0",
+    "description": "Block URLs with password protection - Created by 0xDipesh",
+    "permissions": [
+        "declarativeNetRequest",
+        "storage",
+        "tabs",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "<all-urls>"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Web Sentinel by Dipesh"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["popup.html", "style.css", "popup.js"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+}
